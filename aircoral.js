@@ -16,8 +16,8 @@ function calculateArea(fixtureVolume) {
 	//Calculate volume
   	result = (fixtureVolume/height)*quantity;
 
-	//Convert result into square feet
-  	result = result*3.28084;
+	//Convert result into square feet (fixed)
+  	result = result*3.28084*3.28084;
 
 	//Format result
 	result = result.toFixed(2) + " ft"+ str +"";
